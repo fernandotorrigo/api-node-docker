@@ -21,5 +21,5 @@ module.exports = function (app) {
   app.patch("/user/:id", controller.editUser);
 
   // Rota para deletar usuário
-  app.delete("/user/delete", controller.deleteUser);
+  app.delete("/user/:id", controller.deleteUser);
 };
