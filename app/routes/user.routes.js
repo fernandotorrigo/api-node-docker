@@ -10,16 +10,16 @@ module.exports = function (app) {
   });
 
   // Rota para criar usuário
-  app.post("new", controller.newUser);
+  app.post("/user/new", controller.newUser);
 
   // Rota para listar usuário
-  app.get("list", controller.showUsers);
+  app.get("/user/", controller.showUsers);
 
-  app.get(":id", controller.showOneUser);
+  app.get("/user/:id", controller.showOneUser);
 
   // Rota para editar usuário
-  app.put("edit/:id", controller.editUser);
+  app.patch("/user/:id", controller.editUser);
 
   // Rota para deletar usuário
-  app.delete("delete", controller.deleteUser);
+  app.delete("/user/delete", controller.deleteUser);
 };
