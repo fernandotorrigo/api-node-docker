@@ -1,8 +1,7 @@
 const mysql = require('mysql');
 
 var connection = mysql.createConnection({
-  host: "127.0.0.1",
-  port: "3308",
+  host: "db",
   user: "root",
   password: "root",
   database: "database_edilabs",
